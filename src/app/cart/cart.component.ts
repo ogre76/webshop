@@ -1,10 +1,10 @@
-import { ProductGroup } from './../cart-state/cart-selector';
 import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Product } from '../data/product.model';
-import { selectGroupedCartEntries } from '../cart-state/cart-selector';
-import { addProduct, removeProduct } from '../cart-state/cart-actions';
+import { selectGroupedCartEntries } from '../cart-state/cart.selector';
+import { addProduct, removeProduct } from '../cart-state/cart.actions';
+import { ProductGroup } from '../data/productgroup.mode';
 
 @Component({
   selector: 'app-cart',

@@ -8,7 +8,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { ShopComponent } from './shop/shop.component';
 import { MainComponent } from './main/main.component';
 import { StoreModule } from '@ngrx/store';
-import { cartReducer, metaReducerLocalStorage } from './cart-state/cart-reducer';
+import { cartReducer, metaReducerLocalStorage } from './cart-state/cart.reducer';
 import { CartComponent } from './cart/cart.component';
 import { FooterComponent } from './footer/footer.component';
 

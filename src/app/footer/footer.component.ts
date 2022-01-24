@@ -1,7 +1,7 @@
 import { Store } from '@ngrx/store';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { selectCalcTotalPrice } from '../cart-state/cart-selector';
+import { selectCalcTotalPrice } from '../cart-state/cart.selector';
 
 @Component({
   selector: 'app-footer',

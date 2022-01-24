@@ -1,12 +1,6 @@
-import { MapType } from "@angular/compiler";
 import { createFeatureSelector, createSelector } from "@ngrx/store";
-import { map } from "rxjs";
 import { Product } from "../data/product.model";
-
-export interface ProductGroup{
-    product: Product;
-    count:number;
-}
+import { ProductGroup } from "../data/productgroup.mode";
 
 
 export const selectCountProducts = createSelector(
@@ -18,17 +12,14 @@ export const selectCountProducts = createSelector(
 
 export const selectCalcTotalPrice = createSelector(
   createFeatureSelector('cartEntries'),
-  (state:Product[]) => {
-    
+  (state:Product[]) => {    
     var sum= 0;
     state.forEach(p=>{
       sum = sum+p.price;
-    })
-    
+    })    
     return sum;
-  // const nextState = new Map([...map.entries()].sort());
-  // return Array.from(nextState.values());
 })
+
 export const selectGroupedCartEntries = createSelector(
     createFeatureSelector('cartEntries'),
     (state: Product[]) => {

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { selectCountProducts } from '../cart-state/cart-selector';
+import { selectCountProducts } from '../cart-state/cart.selector';
 
 @Component({
   selector: 'app-header',

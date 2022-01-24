@@ -1,4 +1,4 @@
-import { clearCart, addProduct, removeProduct } from './cart-actions';
+import { clearCart, addProduct, removeProduct } from './cart.actions';
 import { Product } from '../data/product.model';
 import { ActionReducer, createReducer, INIT, on, UPDATE } from '@ngrx/store';
 

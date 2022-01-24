@@ -1,11 +1,8 @@
-import { selectCountProducts } from './../cart-state/cart-selector';
-import { addProduct, removeProduct } from './../cart-state/cart-actions';
-import { PRODUCTS } from './../data/products.model';
+import { selectCountProducts, selectGroupedCartEntries } from './../cart-state/cart.selector';
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Product } from '../data/product.model';
-import { ProductGroup, selectGroupedCartEntries } from '../cart-state/cart-selector';
 import { Observable } from 'rxjs';
+import { ProductGroup } from '../data/productgroup.mode';
 
 @Component({
   selector: 'app-main',

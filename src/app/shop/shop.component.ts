@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { addProduct } from '../cart-state/cart-actions';
+import { addProduct } from '../cart-state/cart.actions';
 import { Product } from '../data/product.model';
 import { PRODUCTS } from '../data/products.model';
 
