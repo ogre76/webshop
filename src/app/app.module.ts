@@ -1,3 +1,4 @@
+import { BillingModule } from './billing/billing.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -12,6 +13,7 @@ import { cartReducer, metaReducerLocalStorage } from './cart-state/cart.reducer'
 import { CartComponent } from './cart/cart.component';
 import { FooterComponent } from './footer/footer.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +27,7 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BillingModule,
     StoreModule.forRoot(
       {cartEntries: cartReducer },
       {metaReducers:[metaReducerLocalStorage]}

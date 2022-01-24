@@ -6,23 +6,10 @@
   body {
     margin: 0;
   }
-  
-  
-  
-  /* Create three equal columns that floats next to each other */
-  .columnCart {
-      
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background-color: bisque;
-    border: 1px;
-    border-color: black;
-    border-style: solid;
-  }
+
   .columnProduct {
     float: left;
-    width: 60%;
+    width: 80%;
     padding: 10px;
     background-color: bisque;
     border: 1px;

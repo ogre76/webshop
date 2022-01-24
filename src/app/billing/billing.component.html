@@ -1,0 +1,10 @@
+<div *ngFor="let item of selectCartProducts$ | async">
+  <u>{{ item.product.name }} </u>
+  <br> Num:{{ item.count }} 
+  <br> Price: {{item.product.price}}
+  <br> Sum: {{ item.count * item.product.price }} €
+  <hr>
+</div>
+<div>
+  <p><u><b>Total Price: {{selectTotalPrice$ | async }}</b></u></p>
+</div>
