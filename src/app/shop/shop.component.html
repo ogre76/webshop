@@ -1,0 +1,5 @@
+<div *ngFor="let product of products()">
+    {{ product.name }}
+    <button (click)="buyProduct(product)">+</button>
+    <!-- <button (click)="deleteProduct(product)">-</button> -->
+  </div>

@@ -1,0 +1,20 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+  bottom: 0;
+ background-color: antiquewhite;
+ height: 100px;
+
+
+  width: 100%;
+}
